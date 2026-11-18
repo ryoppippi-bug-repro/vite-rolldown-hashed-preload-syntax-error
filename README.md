@@ -4,6 +4,8 @@ Vite 8.3.8 with a manual Rolldown 1.3.2 override builds successfully but emits J
 
 This documents the compatibility boundary around [Rolldown #11157](https://github.com/rolldown/rolldown/pull/11157) and [Vite #23221](https://github.com/vitejs/vite/issues/23221). The consumer fix is already present in Vite's main branch and 8.4.0-beta.1; this is not a claim that the unsupported override is covered by Vite 8.3.8's dependency contract.
 
+The repro and verified compatibility results were [reported upstream](https://github.com/vitejs/vite/issues/23221#issuecomment-6965571171) on 2026-11-18.
+
 ## Steps
 
 Use Node.js 24.22.3 and pnpm 12.16.1, as pinned in the manifests and `.node-version`.

@@ -1,0 +1,4 @@
+autoInstallPeers: false
+minimumReleaseAge: 1440
+overrides:
+  "vite>rolldown": 1.3.2

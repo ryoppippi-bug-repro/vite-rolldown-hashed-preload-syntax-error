@@ -1,0 +1,16 @@
+{
+  "name": "vite-rolldown-hashed-preload-syntax-error",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "packageManager": "pnpm@12.16.1",
+  "engines": { "node": "24.22.3" },
+  "scripts": {
+    "install:fixtures": "pnpm --dir baseline install --frozen-lockfile && pnpm --dir candidate install --frozen-lockfile && pnpm --dir beta install --frozen-lockfile",
+    "repro:official": "node --experimental-vm-modules repro.js baseline",
+    "repro": "node --experimental-vm-modules repro.js candidate",
+    "repro:beta": "node --experimental-vm-modules repro.js beta",
+    "show:official": "node --experimental-vm-modules repro.js baseline --show",
+    "show": "node --experimental-vm-modules repro.js candidate --show"
+  }
+}
